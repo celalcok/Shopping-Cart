@@ -1,3 +1,6 @@
+# Making Shopping Cart Using React and Redux
+![shopping-cart](shopping-cart.gif "Making analog and digital clocks with html, css and js")
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
