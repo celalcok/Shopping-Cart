@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import {connect} from "react-redux"
+import {HashRouter, Routes, Route} from "react-router-dom"
+import ProductsPage from './pages/ProductsPage';
+import CartPage from './pages/CartPage';
+function App(props) {
+  console.log(props.bookList)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<ProductsPage />} />
+        <Route path = "/cart" element={<CartPage />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
-export default App;
+const mapStateToProps = (state)=>{
+  return {
+    bookList: state.bookList
+  }
+}
+
+export default connect(mapStateToProps)(App);

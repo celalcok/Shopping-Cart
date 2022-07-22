@@ -11,3 +11,78 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.page{
+  width: 600px;
+  margin: 50px auto;
+}
+.header{
+  position: relative;
+}
+.header div{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px 30px;
+  color: #fff;
+  font-weight: bold;
+
+}
+.footer div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  background-color: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.header nav{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: #00b1d5;
+}
+h2{
+  color:#00b1d5;
+}
+
+.book{
+  display: flex;
+  gap: 40px;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.book img{
+  width: 30%;
+}
+.cart-link{
+  position: relative;
+}
+.cart-count{
+  background-color:#00b1d5;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -5px;
+  right: -18px;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
